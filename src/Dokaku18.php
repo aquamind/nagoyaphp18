@@ -8,7 +8,8 @@ class Dokaku18
 {
     public function run(string $input) : string
     {
-        // implement me.
-        return '1f-03-00-1c-0d-0f-06';
+        $blocks = new Blocks($input);
+        $blocks->removeFullLine();
+        return strval($blocks);
     }
 }
